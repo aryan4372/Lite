@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90A4AE">
+
+    <EditText
+        android:id="@+id/hour"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="HH"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:text=":"
+        android:textSize="50px"
+        android:layout_alignBaseline="@+id/hour"
+        android:layout_alignBottom="@+id/hour"
+        android:layout_toRightOf="@+id/hour"
+        android:layout_toEndOf="@+id/hour" />
+
+    <EditText
+        android:id="@+id/minute"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="50px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/minute"
+        android:layout_alignBottom="@+id/minute"
+        android:layout_toRightOf="@+id/minute"
+        android:layout_toEndOf="@+id/minute" />
+
+
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/minute"
+        android:layout_marginTop="95dp"
+        android:onClick="timeBlock"
+        android:text="KEEP THE CONTACT BLOCKED FOR SPECIFIED TIME"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:text="OR"
+        android:textSize="50px"
+        android:layout_below="@+id/button7"
+        android:layout_alignRight="@+id/second"
+        android:layout_alignEnd="@+id/second"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fBlock"
+        android:text="KEEP THE CONTACT BLOCKED UNTIL I UNBLOCK IT"
+        android:textSize="50px"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:id="@+id/second"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button7"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:hint="SS"
+        android:inputType="number" />
+
+</RelativeLayout>
